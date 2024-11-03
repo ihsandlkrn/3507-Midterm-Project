@@ -1,0 +1,222 @@
+/* Universal style resets */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Header styling */
+header{
+    border-style: solid;
+    border-radius: 0.3rem;
+    border-width:0.1rem ;
+}
+/* Bank icon inside the header */
+#bankIcon{
+    padding-left: 1rem;
+    height: 2rem;
+    width: 3rem;
+}
+/* Header container layout */
+#hdr{
+    display: flex;
+    justify-content:space-between;
+    
+}
+/* Individual header sections (logo, title, and tagline) */
+#hdrdiv{
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+/* Header tagline style */
+#hdr h2{
+    justify-content: flex-end;
+    font-size: 1.4rem;
+}
+/* Footer container styling */
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-radius: 0.3rem;
+    border-width: 0.1rem;
+}
+/* Main body layout */
+#body{
+    display: flex;
+    overflow: auto;
+    width:100% ;
+    
+}
+/* To Cover all the body part by image */
+body{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(253, 185, 19, 0.8)), 
+                url('img/pexels-pixabay-259200.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;   
+}
+/* Left section of the body with financial info */
+#bodyleft{
+    padding: 0.3rem;
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.3rem;
+}
+/* Middle section with news content */
+#bodymid{
+    border-style: solid;
+    border-width: 0.1rem;
+    width:60%;
+    padding: 1rem; 
+    overflow-y: auto; /* Enables vertical scrolling for overflow */
+    max-height: 39rem; 
+    box-sizing: border-box; 
+    scrollbar-color: rgb(255, 255, 255) rgba(253, 201, 70, 0.8);
+}
+/* Right section with user profile */
+#bodyright{
+    display: flex;
+    flex-direction: column;
+    width:15%;
+    padding: 0.3rem;
+}
+/* Style for smaller images (e.g., icons for items) */
+.leftimgs{
+    height: 3.5rem;
+    width: 3.5rem;
+    margin: 1rem;
+}
+/* Styling for individual financial items */
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(253, 185, 19, 0.8))
+}
+/* General text styling within span elements */
+span {
+        font-size: 1rem;
+        color: #333;
+}
+/* Column container inside right section */ 
+.bodyright_column{
+    display: flex;
+    flex-direction: column;
+}
+.rightimgs{
+    height: 3.5rem;
+    width: 3.5rem;
+    margin: 1rem;
+}
+#rightdivs{
+    margin-top :3.1rem;
+}
+#rightinners{
+    margin: 0.9rem;
+}
+/* Button-like styling for income and expense divs */
+.incomings{
+    background-color: rgb(23, 169, 23);
+    border: solid;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    width: 10rem;
+    height: 1.5rem;
+    font-size: 1rem;
+}
+/* Button-like styling for income and expense divs */
+.cashout{
+    background-color: red;
+    border: solid;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    width: 10rem;
+    height: 1.5rem;
+    font-size: 1rem;
+}
+/* Responsive design: Adjusts layout for medium screens */
+@media (max-width: 768px) {
+    #bodyleft {
+        width: 100%;
+    }
+    #bodymid {
+        width: 100%;
+    }
+    #bodyright {
+        width: 100%;
+    }
+    #body {
+        flex-direction: column;
+    }
+}
+/* Responsive design: Adjusts layout for small screens */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #hdr h1 {
+        font-size: 1.5rem;
+    }
+    
+    #bankIcon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    #bodyleft, #bodymid, #bodyright {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    
+    .leftimgs, .rightimgs {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+}
+/* Title text within the main content area */
+#bodymid h2{
+    text-align: center;
+    font-size: 2rem;
+    
+}
+/* Footer links styling */
+#footerlinks{
+    font-size: 2rem;
+    color: black;
+}
+/* Footer div styling to center footer items */
+#footderdiv{
+    padding: 1rem;
+    margin: auto;
+}
+/* Default link styling (for unvisited links) */
+a:link{
+    text-decoration: none;   
+}
+/* Styling for paragraph text within the middle content section */
+.bodymid-paragraph {
+    font-size: 2rem !important;
+    line-height: 1.5;
+    margin: 0.3rem 0;
+    padding: 0.3rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 0.5rem;
+
+}
